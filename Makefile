@@ -1,3 +1,6 @@
+add:
+	poetry add
+
 brain-games:
 	poetry run brain-games
 
