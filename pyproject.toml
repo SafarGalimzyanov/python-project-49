@@ -13,13 +13,8 @@ prompt = "^0.4.1"
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.games.brain_games:main"
 brain-even = "brain_games.scripts.games.brain_even:main"
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 brain-calc = "brain_games.scripts.games.brain_calc:main"
->>>>>>> 54aaf6a (Step 6: add "brain_games/games_logic.py" which contains logic for brain_even.py and further games; mov "brain_even.py" and "brain_games.py" to "scripts/games/; add brain-calc game")
->>>>>>> b6ab76a (Step 6: add "brain_games/games_logic.py" which contains logic for "brain_even.py" and further games; move "brain_even.py" and "brain_games.py" to "scripts/games/; add "brain_calc.py" game and "brain-calc" script")
+brain-gcd = "brain_games.scripts.games.brain_gcd:main"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^6.0.0"
