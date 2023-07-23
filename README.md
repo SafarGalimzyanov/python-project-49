@@ -4,3 +4,4 @@
 [[![Asciinema]](https://asciinema.org/a/zZxxmOvXDh7Tde3xq3YhJww9i)
 brain-gcd: https://asciinema.org/a/eTMdB4btGmDQajkbqgRG4YTXd
 brain-calc: https://asciinema.org/a/KOTL01N0RSOreOIu6tXjQIM1o
+brain-progression: https://asciinema.org/a/GhcrFst8EsOJaG2hV9c1f3K2V
