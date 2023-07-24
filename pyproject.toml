@@ -1,10 +1,18 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Package features games conducted in a command line"
 authors = ["Safar Galimzyanov <safargalimzyanov@protonmail.com>"]
 readme = "README.md"
+classifiers = [
+	"Intended Audience :: End Users/Desktop"
+	"License :: Freeware"
+	"Natural Language :: English"
+	"Operating System :: POSIX :: Linux"
+	"Programming Language :: Python :: 3.10"
+]
 packages = [{include = "brain_games"}]
+repository = "https://github.com/SafarGalimzyanov/python-project-49.git"
 
 [tool.poetry.dependencies]
 python = "^3.10"
