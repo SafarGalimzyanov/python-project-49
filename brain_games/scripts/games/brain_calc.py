@@ -10,18 +10,17 @@ def main():
 
     viable_operands = ['+', '-', '*']
     max_num = 21
-    questions_num = 3
     left_nums = []
     operands = []
     right_nums = []
-    for _ in range(questions_num):
+    for _ in range(game.GAME_DURATION):
         left_nums.append(randrange(max_num))
         operands.append(choice(viable_operands))
         right_nums.append(randrange(max_num))
 
     questions = []
     right_answers = []
-    for i in range(questions_num):
+    for i in range(game.GAME_DURATION):
         questions.append(f'{left_nums[i]} {operands[i]} {right_nums[i]}')
         match operands[i]:
             case '+':
@@ -30,7 +29,6 @@ def main():
                 right_answers.append(str(int(left_nums[i]) - int(right_nums[i])))
             case'*':
                 right_answers.append(str(int(left_nums[i]) * int(right_nums[i])))
-
 
     game.play_game(game_rule, questions, right_answers)
 
