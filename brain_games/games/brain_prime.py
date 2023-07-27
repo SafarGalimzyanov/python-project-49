@@ -15,7 +15,7 @@ def main():
     right_answers = []
 
     for _ in range(game.GAME_DURATION):
-        ran_num = choice(range((min_num, max_num)))
+        ran_num = choice(range(min_num, max_num))
         questions.append(ran_num)
         right_answers.append('yes' if ran_num in PRIME_NUMBERS else 'no')
 
