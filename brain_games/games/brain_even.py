@@ -6,10 +6,10 @@ from random import randrange
 
 def main():
     game_rule = 'Answer "yes" if the number is even, otherwise answer "no"'
-    
-    max_number = 21 #range for randrange is 1 - 20
+
+    max_number = 21  # range for randrange is 1 - 20
     questions = []
-    right_answers = [] #"yes" if even, "no" if odd
+    right_answers = []  # "yes" if even, "no" if odd
     for _ in range(game.GAME_DURATION):
         rand_num = randrange(1, max_number)
         questions.append(rand_num)

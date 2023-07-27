@@ -23,13 +23,13 @@ def main():
     game_rule = 'What number is missing in the progression?'
 
     num_of_elems = 10
-    questions = [None]*GAME_DURATION
-    right_answers = [None]*GAME_DURATION
-    for i in range(GAME_DURATION):
+    questions = [None]*game.GAME_DURATION
+    right_answers = [None]*game.GAME_DURATION
+    for i in range(game.GAME_DURATION):
         start = choice(range(21))
         step = choice(range(1, 6))
         right_answers[i], questions[i] = arith_prog(start, step, num_of_elems)
-    
+
     game.play_game(game_rule, questions, right_answers)
 
 

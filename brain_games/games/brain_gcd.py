@@ -7,7 +7,7 @@ from math import gcd
 
 
 def main():
-    
+
     game_rule = 'Find the greates common divisor of given numbers'
 
     left_nums = []
@@ -21,7 +21,6 @@ def main():
     for i in range(game.GAME_DURATION):
         questions.append(f'{left_nums[i]} {right_nums[i]}')
         right_answers.append(str(gcd(left_nums[i], right_nums[i])))
-
 
     game.play_game(game_rule, questions, right_answers)
 
