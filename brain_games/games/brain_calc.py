@@ -15,7 +15,7 @@ def main():
     right_nums = []
     for _ in range(game.GAME_DURATION):
         left_nums.append(int(randrange(max_num)))
-        operands.append(int(choice(viable_operands)))
+        operands.append(choice(viable_operands))
         right_nums.append(randrange(max_num))
 
     questions = []
