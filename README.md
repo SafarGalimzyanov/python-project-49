@@ -1,3 +1,10 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/SafarGalimzyanov/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/SafarGalimzyanov/python-project-49/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/566304b06d2e1648d868/maintainability)](https://codeclimate.com/github/SafarGalimzyanov/python-project-49/maintainability
+[![Maintainability](https://api.codeclimate.com/v1/badges/566304b06d2e1648d868/maintainability)](https://codeclimate.com/github/SafarGalimzyanov/python-project-49/maintainability)
+[![asciicast](https://asciinema.org/a/zZxxmOvXDh7Tde3xq3YhJww9i.svg)](https://asciinema.org/a/zZxxmOvXDh7Tde3xq3YhJww9i)
+[![asciicast](https://asciinema.org/a/GCA0O1pl2Swp0VqkSOXrirzbY.svg)](https://asciinema.org/a/GCA0O1pl2Swp0VqkSOXrirzbY)
+[![asciicast](https://asciinema.org/a/q81aaQSWg20qCHXB76ncrYJzY.svg)](https://asciinema.org/a/q81aaQSWg20qCHXB76ncrYJzY)
+[![asciicast](https://asciinema.org/a/CVMRWIO5uNuqnN6YV4ERkcByx.svg)](https://asciinema.org/a/CVMRWIO5uNuqnN6YV4ERkcByx)
+[![asciicast](https://asciinema.org/a/3nlsNfX8nRjtdDfkVgw7zrJlb.svg)](https://asciinema.org/a/3nlsNfX8nRjtdDfkVgw7zrJlb)
+[![asciicast](https://asciinema.org/a/z5XL5xCccxJIGmf8EzwvfNfOh.svg)](https://asciinema.org/a/z5XL5xCccxJIGmf8EzwvfNfOh)
+[![asciicast](https://asciinema.org/a/QrH2PbQD6FDmtoqjRjtUr0Hoa.svg)](https://asciinema.org/a/QrH2PbQD6FDmtoqjRjtUr0Hoa)
