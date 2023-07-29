@@ -5,7 +5,7 @@ from random import randrange
 
 
 def main():
-    game_rule = 'Answer "yes" if the number is even, otherwise answer "no"'
+    game_rule = 'Answer "yes" if the number is even, otherwise answer "no".'
 
     max_number = 21  # range for randrange is 1 - 20
     questions = []
