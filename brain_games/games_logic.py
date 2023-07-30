@@ -17,7 +17,7 @@ def play_game(game_rule: str, game_questions: list, right_answers: list):
         if user_answer == right_answers[i]:  # continue
             print('Correct!')
         else:  # exit
-            print(f'{user_answer} is a wrong answer ;(. Correct answer was "{right_answers[i]}".')
+            print(f'"{user_answer}" is a wrong answer ;(. Correct answer was "{right_answers[i]}".')
             print(f'Let`s try again, Tirion!')
             return
 
