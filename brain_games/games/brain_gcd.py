@@ -8,7 +8,7 @@ from math import gcd
 
 def main():
 
-    game_rule = 'Find the greates common divisor of given numbers.'
+    game_rule = 'Find the greatest common divisor of given numbers.'
 
     left_nums = []
     right_nums = []
