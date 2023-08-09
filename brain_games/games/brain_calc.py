@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import brain_games.games.user_interaction as u_i
+import brain_games.user_interaction as u_i
 from random import randrange, choice
 
 

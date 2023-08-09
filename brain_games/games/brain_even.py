@@ -1,21 +1,27 @@
 #!/usr/bin/env python3
 
-import brain_games.games_logic as game
+import brain_games.user_interaction as u_i
 from random import randrange
 
 
-def main():
-    game_rule = 'Answer "yes" if the number is even, otherwise answer "no".'
-
-    max_number = 21  # range for randrange is 1 - 20
+def get_questions_answers(min_num: int, max_num: int) -> tuple:
     questions = []
-    right_answers = []  # "yes" if even, "no" if odd
-    for _ in range(game.GAME_DURATION):
-        rand_num = randrange(1, max_number)
+    right_answers = []
+    for _ in range(u_i.GAME_DURATION):
+        rand_num = get_random_num(min_num, max_num)
         questions.append(rand_num)
         right_answers.append('yes' if rand_num % 2 == 0 else 'no')
 
-    game.play_game(game_rule, questions, right_answers)
+    return (tuple(questions), tuple(right_answers))
+
+
+def get_random_num(min_num: int, max_num: int) -> int:
+    return randrange(min_num, max_num)
+
+
+def init_game(game_rule: str, min_num: int, max_num: int) -> None:
+    questions, answers = get_questions_answers(min_num, max_num)
+    u_i.play_game(game_rule, questions, answers)
 
 
 if __name__ == '__main__':

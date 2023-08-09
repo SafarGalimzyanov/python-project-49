@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 
 
-import brain_games.games_logic as game
+import brain_games.user_interaction as u_i
 from random import randrange
 from math import gcd
 

@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 
 
-import brain_games.games_logic as game
+import brain_games.user_interaction as u_i
 from random import choice
 
 
@@ -20,10 +20,7 @@ def arith_prog(start, step, num_of_elems):
 
 
 def main():
-    game_rule = 'What number is missing in the progression?'
-
-    num_of_elems = 10
-    questions = [None]*game.GAME_DURATION
+   questions = [None]*game.GAME_DURATION
     right_answers = [None]*game.GAME_DURATION
     for i in range(game.GAME_DURATION):
         start = choice(range(21))
