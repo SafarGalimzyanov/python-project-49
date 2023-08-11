@@ -33,5 +33,5 @@ def init_game() -> tuple:
     questions, answers = [None]*GAME_DURATION, [None]*GAME_DURATION
     for i in range(GAME_DURATION):
         questions[i], answers[i] = get_question_answer()
-    
+
     return (GAME_RULE, questions, answers)

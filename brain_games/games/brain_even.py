@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-from brain_games.engine import get_random_num, get_random_elem, GAME_DURATION
+from brain_games.engine import get_random_num, GAME_DURATION
 
 
 # description

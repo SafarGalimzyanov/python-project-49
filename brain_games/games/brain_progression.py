@@ -23,7 +23,7 @@ def get_question_answer() -> tuple:
     question = progression
     answer = progression[elem_to_hide]
     progression[elem_to_hide] = '..'
-    
+
     return (question, answer)
 
 

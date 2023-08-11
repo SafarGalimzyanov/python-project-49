@@ -18,15 +18,11 @@ def get_question_answer() -> tuple:
     answer = str(gcd(left_random_num, right_random_num))
 
     return (question, answer)
-    
+
 
 def init_game() -> tuple:
     questions, answers = [None]*GAME_DURATION, [None]*GAME_DURATION
     for i in range(GAME_DURATION):
         questions[i], answers[i] = get_question_answer()
-    
+
     return (GAME_RULE, questions, answers)
-
-
-if __name__ == '__main__':
-    main()
