@@ -1,28 +1,26 @@
 #!/usr/bin/env python3
 
-import brain_games.user_interaction as u_i
-from random import randrange
+
+from brain_games.engine import get_random_num, get_random_elem, GAME_DURATION
 
 
-def get_questions_answers(min_num: int, max_num: int) -> tuple:
-    questions = []
-    right_answers = []
-    for _ in range(u_i.GAME_DURATION):
-        rand_num = get_random_num(min_num, max_num)
-        questions.append(rand_num)
-        right_answers.append('yes' if rand_num % 2 == 0 else 'no')
-
-    return (tuple(questions), tuple(right_answers))
+# description
+GAME_RULE = 'Answer "yes" if the number is even, otherwise answer "no"'
+MIN_NUM = 1
+MAX_NUM = 99
 
 
-def get_random_num(min_num: int, max_num: int) -> int:
-    return randrange(min_num, max_num)
+def get_question_answer() -> tuple:
+    random_num = get_random_num(MIN_NUM, MAX_NUM)
+    question = random_num
+    answer = 'yes' if random_num % 2 == 0 else 'no'
+
+    return (question, answer)
 
 
-def init_game(game_rule: str, min_num: int, max_num: int) -> None:
-    questions, answers = get_questions_answers(min_num, max_num)
-    u_i.play_game(game_rule, questions, answers)
+def init_game() -> tuple:
+    questions, answers = [None]*GAME_DURATION, [None]*GAME_DURATION
+    for i in range(GAME_DURATION):
+        questions[i], answers[i] = get_question_answer()
 
-
-if __name__ == '__main__':
-    main()
+    return (GAME_RULE, questions, answers)

@@ -1,4 +1,10 @@
-    game_rule = 'What number is missing in the progression?'
+from brain_games.games.brain_progression import init_game
+from brain_games.engine import play_game
 
-    num_of_elems = 10
- 
+
+def main():
+    play_game(*init_game())
+
+    
+if __name__ == '__main__':
+    main()

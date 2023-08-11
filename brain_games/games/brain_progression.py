@@ -1,34 +1,35 @@
 #! /usr/bin/env python3
 
 
-import brain_games.user_interaction as u_i
-from random import choice
+from brain_games.engine import GAME_DURATION, get_random_num
 
 
-def arith_prog(start, step, num_of_elems):
+# description
+GAME_RULE = 'What number is missing in the progression?'
+START_NUM = 1
+MIN_STEP = 1
+MAX_STEP = 6
+MIN_INDEX = 0
+PROGRESSION_LENGTH = 20
+
+
+def get_question_answer() -> tuple:
     progression = []
-    step_to_hide = choice(range(num_of_elems))
-    elem_to_hide = ''
-    for i in range(num_of_elems):
-        if i == step_to_hide:
-            elem_to_hide = str(start + step*i)
-            progression.append('..')
-        else:
-            progression.append(str(start + step*i))
+    step = get_random_num(MIN_STEP, MAX_STEP)
+    elem_to_hide = get_random_num(MIN_INDEX, PROGRESSION_LENGTH)
+    for i in range(PROGRESSION_LENGTH):
+        progression.append(str(START_NUM + step*i))
 
-    return (elem_to_hide, progression)
-
-
-def main():
-   questions = [None]*game.GAME_DURATION
-    right_answers = [None]*game.GAME_DURATION
-    for i in range(game.GAME_DURATION):
-        start = choice(range(21))
-        step = choice(range(1, 6))
-        right_answers[i], questions[i] = arith_prog(start, step, num_of_elems)
-
-    game.play_game(game_rule, questions, right_answers)
+    question = progression
+    answer = progression[elem_to_hide]
+    progression[elem_to_hide] = '..'
+    
+    return (question, answer)
 
 
-if __name__ == '__main__':
-    main()
+def init_game() -> tuple:
+    questions, answers = [None]*GAME_DURATION, [None]*GAME_DURATION
+    for i in range(GAME_DURATION):
+        questions[i], answers[i] = get_question_answer()
+
+    return (GAME_RULE, questions, answers)

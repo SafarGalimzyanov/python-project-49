@@ -1,28 +1,31 @@
 #! /usr/bin/env python3
 
 
-import brain_games.user_interaction as u_i
-from random import randrange
+from brain_games.engine import GAME_DURATION, get_random_num
 from math import gcd
 
 
-def main():
+# description
+GAME_RULE = 'Find the greatest common divisor of the given numbers'
+MIN_NUM = 1
+MAX_NUM = 99
 
-    game_rule = 'Find the greatest common divisor of given numbers.'
 
-    left_nums = []
-    right_nums = []
-    for _ in range(game.GAME_DURATION):
-        left_nums.append(randrange(1, 100))
-        right_nums.append(randrange(1, 100))
+def get_question_answer() -> tuple:
+    left_random_num = get_random_num(MIN_NUM, MAX_NUM)
+    right_random_num = get_random_num(MIN_NUM, MAX_NUM)
+    question = f'{left_random_num} {right_random_num}'
+    answer = str(gcd(left_random_num, right_random_num))
 
-    questions = []
-    right_answers = []
-    for i in range(game.GAME_DURATION):
-        questions.append(f'{left_nums[i]} {right_nums[i]}')
-        right_answers.append(str(gcd(left_nums[i], right_nums[i])))
+    return (question, answer)
+    
 
-    game.play_game(game_rule, questions, right_answers)
+def init_game() -> tuple:
+    questions, answers = [None]*GAME_DURATION, [None]*GAME_DURATION
+    for i in range(GAME_DURATION):
+        questions[i], answers[i] = get_question_answer()
+    
+    return (GAME_RULE, questions, answers)
 
 
 if __name__ == '__main__':
