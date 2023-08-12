@@ -9,8 +9,12 @@ def get_random_num(min_num: int, max_num: int) -> int:
     return randrange(min_num, max_num + 1)
 
 
-def get_random_elem(t: tuple):
-    return choice(t)
+def get_random_elem(arr, index=False):
+    if index:
+        i = randrange(len(arr))
+        return (arr[i], i)
+    else:
+        return choice(arr)
 
 
 def play_game(game_rule: str, questions: list, right_answers: list) -> None:

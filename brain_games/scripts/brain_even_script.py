@@ -1,9 +1,9 @@
 from brain_games.games.brain_even import init_game
-from brain_games.engine import play_game
+from brain_games.engine import GAME_DURATION, play_game, get_random_num
 
 
 def main():
-    play_game(*init_game())
+    play_game(*init_game(get_random_num, GAME_DURATION))
 
 
 if __name__ == '__main__':
