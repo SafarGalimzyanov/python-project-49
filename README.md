@@ -10,6 +10,7 @@ Each game is played in the command line and requires from the player to correctl
 
 Should the player fail, the game ends and can be replayed by typing the name of the game.
 
+
 GAMES DESCRIPTION:
 
  - brain-games: greeting of the player
@@ -23,6 +24,7 @@ GAMES DESCRIPTION:
  - brain-prime: determine if the number is even
 
  - brain-progression: calculate the hidden number in the progression
+
 
 
 Installation:
