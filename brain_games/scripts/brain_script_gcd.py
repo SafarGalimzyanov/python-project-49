@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+
+
 from brain_games.games.brain_gcd import GAME_RULE, get_question_answer
 from brain_games.engine import play_game, get_random_num
 

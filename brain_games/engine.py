@@ -30,7 +30,8 @@ def play_game(GAME_RULE, get_question_answer) -> None:
         if user_answer == right_answer:  # continue
             print('Correct!')
         else:  # exit
-            print(f'"{user_answer}" is a wrong answer ;(. Correct answer was "{right_answer}".')
+            print(f'"{user_answer}" is a wrong answer ;(', end='')
+            print(f'Correct answer was "{right_answer}".')
             print(f"Let's try again, {user_name}!")
             return
 
