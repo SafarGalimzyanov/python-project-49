@@ -2,24 +2,35 @@
 [![Actions Status](https://github.com/SafarGalimzyanov/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/SafarGalimzyanov/python-project-49/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/566304b06d2e1648d868/maintainability)](https://codeclimate.com/github/SafarGalimzyanov/python-project-49/maintainability)
 
-GENERAL DESCRIPTION:
+:GENERAL DESCRIPTION:
+
 The project features a greeting and six games based on school course of mathematics.
+
 Each game is played in the command line and requires from the player to correctly answer fixed number of questions in a row.
+
 Should the player fail, the game ends and can be replayed by typing the name of the game.
 
 GAMES DESCRIPTION:
+
 brain-games: greeting of the player
+
 brain-calc: calculate the result of the equation
+
 brain-even: determine if the number is even
+
 brain-gcd: calculate the greatest common divisor of two numbers
+
 brain-prime: determine if the number is even
+
 brain-progression: calculate the hidden number in the progression
+
 
 Installation:
 
 [![asciicast](https://asciinema.org/a/nmR4md0iYmAIb8B8NFqKJc9qS.svg)](https://asciinema.org/a/nmR4md0iYmAIb8B8NFqKJc9qS)
 
 Games:
+
 brain-games:
 
 [![asciicast](https://asciinema.org/a/bgtkP79D3PTOSlShDxfB82rCj.svg)](https://asciinema.org/a/bgtkP79D3PTOSlShDxfB82rCj)
