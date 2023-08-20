@@ -8,6 +8,7 @@ Each game is played in the command line and requires from the player to correctl
 Should the player fail, the game ends and can be replayed by typing the name of the game.
 
 GAMES DESCRIPTION:
+
 brain-games: greeting of the player
 brain-calc: calculate the result of the equation
 brain-even: determine if the number is even
