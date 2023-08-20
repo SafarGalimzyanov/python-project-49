@@ -26,7 +26,6 @@ GAMES DESCRIPTION:
  - brain-progression: calculate the hidden number in the progression
 
 
-
 Installation:
 
 [![asciicast](https://asciinema.org/a/nmR4md0iYmAIb8B8NFqKJc9qS.svg)](https://asciinema.org/a/nmR4md0iYmAIb8B8NFqKJc9qS)
