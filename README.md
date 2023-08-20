@@ -1,6 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/SafarGalimzyanov/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/SafarGalimzyanov/python-project-49/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/566304b06d2e1648d868/maintainability)](https://codeclimate.com/github/SafarGalimzyanov/python-project-49/maintainability)
+
 GENERAL DESCRIPTION:
 The project features a greeting and six games based on school course of mathematics.
 Each game is played in the command line and requires from the player to correctly answer fixed number of questions in a row.
