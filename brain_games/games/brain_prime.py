@@ -1,4 +1,5 @@
 from math import sqrt
+from brain_games.games.utils import get_random_num
 
 
 # description
@@ -14,11 +15,9 @@ def is_prime(n: int) -> bool:
     return True
 
 
-def get_question_answer(get_random_num) -> tuple:
-    def inner():
-        random_num = get_random_num(MIN_NUM, MAX_NUM)
-        question = random_num
-        answer = "yes" if is_prime(question) else "no"
+def get_question_answer() -> tuple:
+    random_num = get_random_num(MIN_NUM, MAX_NUM)
+    question = random_num
+    answer = "yes" if is_prime(question) else "no"
 
-        return (question, answer)
-    return inner
+    return (question, answer)

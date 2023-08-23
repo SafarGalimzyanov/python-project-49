@@ -2,7 +2,7 @@
 name = "hexlet-code"
 version = "0.1.0"
 description = "Package features games conducted in a command line"
-license = ["MIT"]
+license = "MIT"
 authors = ["Safar Galimzyanov <safargalimzyanov@protonmail.com>"]
 maintainers = ["Safar Galimzyanov <safargalimzyanov@protonmail.com>"]
 readme = "README.md"
