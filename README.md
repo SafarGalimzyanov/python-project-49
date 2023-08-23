@@ -28,6 +28,15 @@ GAMES DESCRIPTION:
 
 Installation:
 
+ - Clone the code to your directory:
+git clone https://github.com/SafarGalimzyanov/python-project-49.git %desireable directory%
+
+ - Build the project with poetry:
+make build
+
+ - Install required packages
+make package-install
+
 [![asciicast](https://asciinema.org/a/nmR4md0iYmAIb8B8NFqKJc9qS.svg)](https://asciinema.org/a/nmR4md0iYmAIb8B8NFqKJc9qS)
 
 Games:
