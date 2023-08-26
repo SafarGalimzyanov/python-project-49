@@ -4,7 +4,7 @@ from typing import Tuple
 
 
 # description
-GAME_RULE = 'Answer "yes" if the given number is prime, otherwise answer "no"'
+GAME_RULE = 'Answer "yes" if the given number is prime, otherwise answer "no".'
 MIN_NUM = 1
 MAX_NUM = 99
 
@@ -18,6 +18,7 @@ def is_prime(n: int) -> bool:
 
 def get_question_answer() -> Tuple[str, str]:
     random_num = get_random_num(MIN_NUM, MAX_NUM)
+
 
     question = random_num
     answer = "yes" if is_prime(question) else "no"
