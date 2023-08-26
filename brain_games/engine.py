@@ -1,17 +1,20 @@
-from typing import Callable
 from prompt import string
+from typing import Callable, Tuple
+
+
+GetAnswerFunction = Callable[[], Tuple[str, str]]
 
 
 GAME_DURATION = 3  # the game ends after 3 correct answers in a row
 
 
-def play_game(GAME_RULE: str, GetQuestionAnswer: Callable[[None], tuple]) -> None:
+def play_game(game_rule: str, get_question_answer: GetAnswerFunction) -> None:
     print('Welcome to the Brain Games!')
     user_name = string('May I have your name? ')
-    print(f'Hello, {user_name}!\n{GAME_RULE}')
+    print(f'Hello, {user_name}!\n{game_rule}')
 
     for _ in range(GAME_DURATION):
-        question, right_answer = GetQuestionAnswer()
+        question, right_answer = get_question_answer()
         print(f'Question: {question}')
         user_answer = string('Your answer: ')
 

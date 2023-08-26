@@ -1,4 +1,5 @@
 from brain_games.games.utils import get_random_num, get_random_elem
+from typing import Tuple
 
 
 # description
@@ -18,7 +19,7 @@ def get_equation_result(operator: str, left_operand: int, right_operand: int) ->
             return str(left_operand * right_operand)
 
 
-def get_question_answer() -> tuple:
+def get_question_answer() -> Tuple[str, str]:
     left_operand = get_random_num(MIN_NUM, MAX_NUM)
     right_operand = get_random_num(MIN_NUM, MAX_NUM)
     operator = get_random_elem(VIABLE_OPERATORS)
