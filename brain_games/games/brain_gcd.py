@@ -4,7 +4,7 @@ from typing import Tuple
 
 
 # description
-GAME_RULE = 'Find the greatest common divisor of the given numbers.'
+GAME_RULE = 'Find the greatest common divisor of given numbers.'
 MIN_NUM = 1
 MAX_NUM = 99
 
