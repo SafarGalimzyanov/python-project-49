@@ -4,7 +4,7 @@ from typing import Tuple
 
 
 # description
-GAME_RULE = 'Answer "yes" if the given number is prime, otherwise answer "no".'
+GAME_RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 MIN_NUM = 1
 MAX_NUM = 99
 
