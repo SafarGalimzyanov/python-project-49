@@ -10,7 +10,7 @@ DEVIATION = 9
 PROGRESSION_LENGTH = 10
 
 
-def get_progression(start: int, step: int, length: int) -> List[int]:
+def get_progression(start: int, step: int, length: int) -> List[str]:
     return [str(start + step*i) for i in range(length)]
 
 
