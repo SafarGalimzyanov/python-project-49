@@ -22,5 +22,6 @@ def get_question_answer() -> Tuple[str, str]:
     hide_elem, hide_elem_index = get_random_elem(question, index=True)
     answer = hide_elem
     question[hide_elem_index] = '..'
+    question = ' '.join(question)
 
     return (question, answer)
