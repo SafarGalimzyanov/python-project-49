@@ -7,7 +7,5 @@ def get_random_num(min_num: int, max_num: int) -> int:
 
 def get_random_elem(l: list, index=False):
     if index:
-        i = randrange(len(l))
-        return (l[i], i)
-    else:
-        return choice(l)
+        return (l[randrange(len(l))], randrange(len(l)))
+    return choice(l)

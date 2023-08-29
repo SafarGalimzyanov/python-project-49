@@ -9,14 +9,14 @@ MAX_NUM = 20
 VIABLE_OPERATORS = ('+', '-', '*')
 
 
-def get_equation_result(operator: str, left_operand: int, right_operand: int) -> int:
+def get_equation_result(operator: str, left: int, right: int) -> int:
     match operator:
         case '+':
-            return str(left_operand + right_operand)
+            return str(left + right)
         case '-':
-            return str(left_operand - right_operand)
+            return str(left - right)
         case'*':
-            return str(left_operand * right_operand)
+            return str(left * right)
 
 
 def get_question_answer() -> Tuple[str, str]:
